@@ -1,20 +1,23 @@
 body{
-    background-color: #CDB5CD;/* #F5F5DC;*/
+    background-color: #CDB5CD;
     font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+	margin: 0 auto;
+    min-width: 800px;
 }
 .header{
     margin: 1rem auto 0 auto;
     height: 290px;
-    width: 90%;
-    background-color: white;/*#F5DEB3;*/
-    overflow: unset;
+    background-color: white;
     border-radius: 12px;
+    text-overflow: clip;
 }
 .picture{
     float: left;
     width: 250px;
     height: 250px;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
     background-image: url("../img/picture.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -26,18 +29,23 @@ body{
 .name{
     float: left;
     background-color: white;
-    margin: 4rem 0 0 0;
+    margin-top: 5rem;
+    margin-left: 1rem;
     font-size: 400%;
     color: #551A8B;
 }
 .profession{
-    width: 500px;
     margin: 1rem 0 0 0;
     font-size: 50%;
     color: #551A8B;
 }
+.name p{
+    width: 100%;
+    margin: 0;
+}
 .content{
-    width: 90%;
+    float: left;
+    width: 100%;
     margin: 0 auto 1rem auto;
     background: white;
     border-radius: 12px;
@@ -82,8 +90,9 @@ td p{
 
 /* navbar */
 .navbar {
+    float: left;
+    width: 100%;
     height: 45px;
-    width: 90%;
     max-width: 1200px;
     margin: 10px auto 10px auto;
     overflow: hidden;
